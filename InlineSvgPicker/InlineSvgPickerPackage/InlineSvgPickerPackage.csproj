@@ -43,5 +43,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Plugins\package.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\css\inlinesvgpicker.style.css" />
+    <Content Include="App_Plugins\js\inlinesvgpicker.controller.js" />
+    <Content Include="App_Plugins\inlinesvgpicker.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

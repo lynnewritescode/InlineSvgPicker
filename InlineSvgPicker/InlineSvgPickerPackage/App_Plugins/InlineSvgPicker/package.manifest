@@ -1,0 +1,29 @@
+﻿{
+  propertyEditors: [
+    {
+      alias: "InlineSvgPicker",
+      name: "Inline Svg Picker",
+      icon: "icon-smiley-inverted",
+      group: "media",
+      editor: {
+        view: "~/App_Plugins/InlineSvgPicker/inlinesvgpicker.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "description": "Add the path to your custom SVG spritesheet",
+            "key": "svgPath",
+            "label": "SVG Path",
+            "view": "textstring"
+          }
+        ]
+      }
+    }
+  ],
+  javascript: [
+    '~/App_Plugins/InlineSvgPicker/js/inlinesvgpicker.controller.js'
+  ],
+  css: [
+    '~/App_Plugins/InlineSvgPicker/css/inlinesvgpicker.style.css'
+  ]
+}

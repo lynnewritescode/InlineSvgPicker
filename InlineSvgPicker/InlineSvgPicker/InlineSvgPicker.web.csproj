@@ -270,6 +270,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\OsmMaps\assets\css\osmmaps.css" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\layers-2x.png" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\layers.png" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\marker-icon-2x.png" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\marker-icon.png" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\marker-shadow.png" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\leaflet-src.js" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\leaflet.css" />
+    <Content Include="App_Plugins\OsmMaps\assets\leaflet\leaflet.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\da-dk.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\de-de.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\en-gb.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\en-us.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\es-es.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\fr-fr.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\he-il.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\it-it.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\ja-jp.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\ko-kr.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\nb-no.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\nl-nl.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\pl-pl.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\pt-br.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\ru-ru.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\sv-se.js" />
+    <Content Include="App_Plugins\OsmMaps\langs\zh-cn.js" />
+    <Content Include="App_Plugins\OsmMaps\OsmMaps.controller.js" />
+    <Content Include="App_Plugins\OsmMaps\OsmMaps.html" />
+    <Content Include="App_Plugins\StarterKit\lang\en-GB.xml" />
+    <Content Include="App_Plugins\StarterKit\lang\en-US.xml" />
+    <Content Include="App_Plugins\StarterKit\lessons.service.js" />
+    <Content Include="App_Plugins\StarterKit\StarterKitHelp.Controller.js" />
+    <Content Include="App_Plugins\StarterKit\starterkithelp.html" />
+    <Content Include="App_Plugins\StarterKit\tours\views\medialibrary\uploadimages.controller.js" />
+    <Content Include="App_Plugins\StarterKit\tours\views\medialibrary\uploadimages.html" />
+    <Content Include="App_Plugins\StarterKit\tours\views\validatetext.controller.js" />
+    <Content Include="App_Plugins\StarterKit\tours\views\validatetext.html" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -308,6 +345,10 @@
     <Content Include="config\HealthChecks.config" />
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
+    <Content Include="App_Plugins\OsmMaps\package.manifest" />
+    <Content Include="App_Plugins\StarterKit\backoffice\tours\create-content.json" />
+    <Content Include="App_Plugins\StarterKit\backoffice\tours\data-structure.json" />
+    <Content Include="App_Plugins\StarterKit\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -362,6 +403,9 @@
   </Target>
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
   <Import Project="..\packages\UmbracoCms.8.8.0\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.8.0\build\UmbracoCms.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /y /d  "C:\Dev\personal\InlineSvgPicker\InlineSvgPicker\InlineSvgPickerPackage\App_Plugins\*" "C:\Dev\personal\InlineSvgPicker\InlineSvgPicker\InlineSvgPicker\App_Plugins\"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
