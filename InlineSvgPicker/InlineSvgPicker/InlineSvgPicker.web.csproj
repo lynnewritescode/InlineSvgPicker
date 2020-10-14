@@ -270,6 +270,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\InlineSvgPicker\css\inlinesvgpicker.style.css" />
+    <Content Include="App_Plugins\InlineSvgPicker\inlinesvgpicker.html" />
+    <Content Include="App_Plugins\InlineSvgPicker\js\inlinesvgpicker.controller.js" />
+    <Content Include="App_Plugins\InlineSvgPicker\js\inlinesvgpicker.overlay.controller.js" />
+    <Content Include="App_Plugins\InlineSvgPicker\views\inlinesvgpicker.overlay.html" />
     <Content Include="App_Plugins\OsmMaps\assets\css\osmmaps.css" />
     <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\layers-2x.png" />
     <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\layers.png" />
@@ -328,6 +333,7 @@
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="Global.asax" />
+    <Content Include="img\icons.svg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -349,6 +355,7 @@
     <Content Include="App_Plugins\StarterKit\backoffice\tours\create-content.json" />
     <Content Include="App_Plugins\StarterKit\backoffice\tours\data-structure.json" />
     <Content Include="App_Plugins\StarterKit\package.manifest" />
+    <Content Include="App_Plugins\InlineSvgPicker\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -360,6 +367,7 @@
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
+    <Content Include="Views\home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -404,7 +412,7 @@
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
   <Import Project="..\packages\UmbracoCms.8.8.0\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.8.0\build\UmbracoCms.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /s /y /d  "C:\Dev\personal\InlineSvgPicker\InlineSvgPicker\InlineSvgPickerPackage\App_Plugins\*" "C:\Dev\personal\InlineSvgPicker\InlineSvgPicker\InlineSvgPicker\App_Plugins\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /s /y /d /e "C:\Dev\personal\InlineSvgPicker\InlineSvgPicker\InlineSvgPickerPackage\App_Plugins\*" "C:\Dev\personal\InlineSvgPicker\InlineSvgPicker\InlineSvgPicker\App_Plugins"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

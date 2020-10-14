@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "be1345eb3708d60c")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f52ddc8eef45a984")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -623,6 +623,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
 		[ImplementPropertyType("sitename")]
 		public string Sitename => this.Value<string>("sitename");
+
+		///<summary>
+		/// SVG Icon
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
+		[ImplementPropertyType("svgIcon")]
+		public object SvgIcon => this.Value("svgIcon");
 	}
 
 	/// <summary>Feature</summary>

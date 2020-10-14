@@ -44,12 +44,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Plugins\package.manifest" />
+    <None Include="App_Plugins\InlineSvgPicker\package.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Plugins\css\inlinesvgpicker.style.css" />
-    <Content Include="App_Plugins\js\inlinesvgpicker.controller.js" />
-    <Content Include="App_Plugins\inlinesvgpicker.html" />
+    <Content Include="App_Plugins\InlineSvgPicker\css\inlinesvgpicker.style.css" />
+    <Content Include="App_Plugins\InlineSvgPicker\inlinesvgpicker.html" />
+    <Content Include="App_Plugins\InlineSvgPicker\js\inlinesvgpicker.controller.js" />
+    <Content Include="App_Plugins\InlineSvgPicker\js\inlinesvgpicker.overlay.controller.js" />
+    <Content Include="App_Plugins\InlineSvgPicker\views\inlinesvgpicker.overlay.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

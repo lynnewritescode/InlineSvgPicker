@@ -11,9 +11,15 @@
         <p class="section__description">@Model.HeroDescription</p>
         @if (Model.HeroCtalink != null)
         {
-            <a class="button button--border--solid" href="@Model.HeroCtalink.Url">
-                @Model.HeroCtacaption
-            </a>
+        <a class="button button--border--solid" href="@Model.HeroCtalink.Url">
+            @Model.HeroCtacaption
+        </a>
+        }
+
+        @if(Model.SvgIcon != null){
+            <svg aria-hidden="true" class="logo-image">
+                <use xlink:href="/img/icons.svg#@Model.SvgIcon" />
+            </svg>
         }
     </div>
 </section>
