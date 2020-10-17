@@ -1,3 +1,5 @@
+<img src="InlineSvgPicker/images/package-icon.svg" width="100" style="margin-bottom:15px" />
+
 # Inline Svg Picker
 
 An umbraco property editor which allows you to pick an icon based on a custom defined SVG spritesheet. This will allow you to render your SVG's inline.
