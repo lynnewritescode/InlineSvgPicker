@@ -4,6 +4,8 @@
 
 An umbraco property editor which allows you to pick an icon based on a custom defined SVG spritesheet. This will allow you to render your SVG's inline.
 
+This package is based on the [Umbraco.SvgIconPicker](https://github.com/skttl/Umbraco.SvgIconPicker) package by [Skttl](https://github.com/skttl) which is no longer maintained.
+
 ## How to use
 
 Create a new data type and choose Inline Svg Picker as the property editor.
