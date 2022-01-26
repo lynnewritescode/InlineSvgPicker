@@ -1,0 +1,11 @@
+.inline-svg-picker-icon {
+	fill: #000;
+	max-height: 100%;
+	max-width: 100%;
+	height: 3em;
+}
+
+.umb-iconpicker-item a {
+	display: block;
+	margin-bottom: 0.6em;
+}
