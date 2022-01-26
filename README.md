@@ -1,4 +1,4 @@
-<img src="InlineSvgPicker/images/package-icon.svg" width="100" style="margin-bottom:15px" />
+<img src="InlineSvgPicker/package-icon.svg" width="100" style="margin-bottom:15px" />
 
 # Inline Svg Picker
 
