@@ -1,0 +1,27 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <InlineSvgPickerContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\InlineSvgPicker\**\*.*</InlineSvgPickerContentFilesPath>
+    </PropertyGroup>
+
+    <Target Name="CopyInlineSvgPickerAssets" BeforeTargets="Build">
+        <ItemGroup>
+            <InlineSvgPickerContentFiles Include="$(InlineSvgPickerContentFilesPath)" />
+        </ItemGroup>
+        <Message Text="Copying InlineSvgPicker files: $(InlineSvgPickerContentFilesPath) - #@(InlineSvgPickerContentFiles->Count()) files"  Importance="high" />
+        <Copy
+            SourceFiles="@(InlineSvgPickerContentFiles)"
+            DestinationFiles="@(InlineSvgPickerContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\InlineSvgPicker\%(RecursiveDir)%(Filename)%(Extension)')"
+            SkipUnchangedFiles="true" />
+
+    </Target>
+
+    <Target Name="ClearInlineSvgPickerAssets" BeforeTargets="Clean">
+        <ItemGroup>
+            <InlineSvgPickerDir Include="$(MSBuildProjectDirectory)\App_Plugins\InlineSvgPicker\" />
+        </ItemGroup>
+        <Message Text="Clear old InlineSvgPicker data"  Importance="high" />
+        <RemoveDir Directories="@(InlineSvgPickerDir)"  />
+    </Target>
+
+</Project>
