@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <ContentTargetFolders>.</ContentTargetFolders>
+        <Product>InlineSvgPicker</Product>
+        <PackageId>InlineSvgPicker</PackageId>
+        <Title>InlineSvgPicker</Title>
+        <Description>...</Description>
+        <Product>...</Product>
+        <PackageTags>umbraco plugin package</PackageTags>
+        <RootNamespace>InlineSvgPicker</RootNamespace>
+        <Version>2.0.1</Version>
+        <Authors>Lynne Finnigan</Authors>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageIconUrl />
+        <RepositoryUrl>https://github.com/lynnewritescode/InlineSvgPicker</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Umbraco.Cms.Web.Website" Version="9.2.0" />
+        <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="App_Plugins\InlineSvgPicker\**\*.*">
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </Content>
+        <None Include="build\**\*.*">
+            <Pack>True</Pack>
+            <PackagePath>buildTransitive</PackagePath>
+        </None>
+        <None Include="InlineSvgPicker\icon.png">
+          <Pack>True</Pack>
+          <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="package-icon.svg" />
+      <None Remove="package-icon.svg" />
+    </ItemGroup>
+</Project>

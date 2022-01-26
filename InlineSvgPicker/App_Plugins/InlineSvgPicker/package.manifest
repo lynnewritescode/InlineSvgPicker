@@ -1,0 +1,36 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "InlineSvgPicker",
+      "name": "Inline Svg Picker",
+      "icon": "icon-code",
+      "group": "media",
+      "editor": {
+        "view": "~/App_Plugins/InlineSvgPicker/inlinesvgpicker.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "description": "Optional - overwrite the editor popup window title.",
+            "key": "editorTitle",
+            "label": "Editor popup title",
+            "view": "textstring"
+          },
+          {
+            "description": "Add the path to your custom SVG spritesheet.",
+            "key": "svgPath",
+            "label": "SVG path",
+            "view": "textstring"
+          }
+        ]
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/InlineSvgPicker/js/inlinesvgpicker.controller.js",
+    "~/App_Plugins/InlineSvgPicker/js/inlinesvgpicker.overlay.controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/InlineSvgPicker/css/inlinesvgpicker.style.css"
+  ]
+}
