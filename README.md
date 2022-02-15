@@ -1,4 +1,4 @@
-<img src="/InlineSvgPicker/package-icon.svg" width="100" style="margin-bottom:15px" />
+<img src="https://raw.githubusercontent.com/lynnewritescode/InlineSvgPicker/944182ca26a96f814e2f79c508750bfb000b9d32/InlineSvgPicker/InlineSvgPickerPackage/package-icon.svg" width="100" style="margin-bottom:15px" />
 
 # Inline Svg Picker
 
@@ -14,7 +14,7 @@ Optionally, you can add a custom title that appears when you open the editor win
 
 For SVG path, type the path to your SVG spritesheet. This is required for the package to work correctly. For information on how this spritesheet is created and structure, [read this post](https://w3bits.com/svg-sprites).
 
-![Add data type instructions screenshot](/InlineSvgPicker/images/instructions.png 'Add data type')
+![Add data type instructions screenshot](https://raw.githubusercontent.com/lynnewritescode/InlineSvgPicker/d40f48e60bd0b20f39dd350fa3617ab72457eb50/InlineSvgPicker/images/instructions.png 'Add data type')
 
 There is an example spritesheet in this repo [here](/InlineSvgPicker/InlineSvgPicker/img/icons.svg). Each SVG is written as a symbol, and looks like this:
 
@@ -28,7 +28,7 @@ This umbraco package allows you to view each of these symbol elements and choose
 
 Add this new data type to a document type (e.g. the homepage document type). Click the plus icon from within your content and the popup window will appear showing the icons from your spritesheet. You can filter these icons, by searching for the ID of the icon. Select an icon by clicking it.
 
-![How to choose an icon from within content](/InlineSvgPicker/images/picker.png 'Choose icon')
+![How to choose an icon from within content](https://raw.githubusercontent.com/lynnewritescode/InlineSvgPicker/d40f48e60bd0b20f39dd350fa3617ab72457eb50/InlineSvgPicker/images/picker.png 'Choose icon')
 
 To render this out in your view, here is some example markup:
 
